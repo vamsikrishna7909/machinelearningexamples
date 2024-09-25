@@ -1,45 +1,68 @@
-REPORT ON MACHINE LEARNING CLASSIFICATION MODELS
-Overview of the dataset:
-I have taken a Loan Dataset to analyze and evaluate which classification model is best suited for prediction out of Logistic Regression, K-Nearest Neighbor Regression, Support Vector, Decision Tree, and Random Forest Classifications.
-The dataset contains transaction self-employed, applicant income, co-applicant income, loan amount, credit history and property area as independent variables/inputs/source and dependent variable/output/target are loan status.
-I used Confusion Matrix, Accuracy, Precision, Recall and F1 scores to evaluate the best fit model for the above data set.
-Logistic Regression:
-Confused matrix = [[14 19] [ 2 88]]
-Accuracy score = 0.8292682926829268 Precision score = 0.822429906542056
-Recall score = 0.9777777777777777
-F1 score = 0.8934010152284264
-Observation-
-The Logistic Regression classifier demonstrates a high accuracy score and strong precision, recall, and F1 score. It excels in correctly classifying both classes, as indicated by high precision and recall values. This model is well-balanced in terms of classifying the two classes.
-K-Nearest Neighbor Classification:
-Observation-
-The K-Nearest Neighbors classifier also performs well with an accuracy of 0.805, along with commendable precision, recall, and F1 score. It correctly classifies both classes, demonstrating a good balance between precision and recall.
-Support Vector Classification:
-Vamsi Krishna 008458886
- Confused matrix = [[17 16] [ 8 82]]
-Accuracy score = 0.8048780487804879 Precision score = 0.8367346938775511 Recall score = 0.9111111111111111
-F1 score = 0.8723404255319148
- Confused matrix = [[14 19]
- [ 2 88]]
- Accuracy score = 0.8292682926829268
-  Precision score = 0.822429906542056
-  Recall score = 0.9777777777777777
-  F1 score = 0.8934010152284264
- Observation-
-Support Vector Classifier (SVC) exhibits similar performance to Logistic Regression with high accuracy and strong precision, recall, and F1 score. It effectively classifies both classes.
+Loan Prediction Analysis using Machine Learning Classification Models
 
-Decision Tree Classification:
-Observation-
-The Decision Tree classifier has a lower accuracy score compared to the previous models. While it has a reasonable precision score, it struggles with recall, indicating that it does not capture all instances of the first class effectively. This suggests a potential issue with overfitting.
-Random Forest Classification:
-Vamsi Krishna 008458886
- Confused matrix = [[20 13] [25 65]]
-Accuracy score = 0.6910569105691057 Precision score = 0.8333333333333334 Recall score = 0.7222222222222222
-F1 score = 0.7738095238095238
- Confused matrix = [[20 13] [12 78]]
-Accuracy score = 0.7967479674796748 Precision score = 0.8571428571428571 Recall score = 0.8666666666666667
-F1 score = 0.861878453038674
-Observation-
-The Random Forest classifier offers improved performance over the Decision Tree with a slightly higher accuracy score. It maintains strong precision and recall values, resulting in a balanced F1 score.
+Overview
+This project analyzes and evaluates various classification models to predict loan status. The dataset includes features such as:
+
+Transaction type (e.g., self-employed)
+Applicant income
+Co-applicant income
+Loan amount
+Credit history
+Property area
+The target variable is loan status.
+
+Classification Models Evaluated:
+The following models were tested to identify the best fit for the dataset:
+
+Logistic Regression
+K-Nearest Neighbor (KNN)
+Support Vector Classification (SVC)
+Decision Tree
+Random Forest
+Evaluation Metrics:
+To determine the performance of each model, I used the following metrics:
+
+Confusion Matrix
+Accuracy
+Precision
+Recall
+F1 Score
+Results:
+1. Logistic Regression
+
+Confusion Matrix: [[14 19], [2 88]]
+Accuracy: 82.9%
+Precision: 82.24%
+Recall: 97.77%
+F1 Score: 89.34%
+Observation: The Logistic Regression model demonstrates high accuracy, precision, recall, and F1 score. It effectively balances classifying both categories.
+
+2. K-Nearest Neighbor (KNN)
+
+Accuracy: 80.5%
+Precision, Recall, F1 Score: Comparable to Logistic Regression.
+Observation: KNN performs well with commendable accuracy, precision, recall, and F1 score, indicating good classification balance.
+
+3. Support Vector Classification (SVC)
+
+Confusion Matrix: [[17 16], [8 82]]
+Accuracy: 80.4%
+Precision: 83.67%
+Recall: 91.11%
+F1 Score: 87.23%
+Observation: SVC has similar performance to Logistic Regression, with strong precision, recall, and overall balanced classification.
+
+4. Decision Tree
+
+Observation: The Decision Tree classifier has a lower accuracy and struggles with recall, suggesting it may overfit to the data.
+5. Random Forest
+
+Confusion Matrix: [[20 13], [12 78]]
+Accuracy: 79.6%
+Precision: 85.71%
+Recall: 86.66%
+F1 Score: 86.18%
+Observation: Random Forest shows improved performance over the Decision Tree, with a balanced F1 score and reliable precision and recall.
 
 Summary:
-Logistic Regression, K-Nearest Neighbors, and the Support Vector Classifier appear to be the best models for this dataset. They have high accuracy and strong precision and recall scores, indicating effective classification of both classes. The Decision Tree, while not performing as well, still shows reasonable precision but falls short in recall, potentially due to overfitting. The Random Forest improves upon the Decision Tree and provides a balanced classification performance.
+Logistic Regression, KNN, and SVC are the top-performing models for this dataset, all demonstrating strong accuracy, precision, and recall. While the Decision Tree model underperforms due to potential overfitting, the Random Forest model improves upon this and offers a well-balanced performance.
