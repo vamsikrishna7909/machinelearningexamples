@@ -1,68 +1,92 @@
-Loan Prediction Analysis using Machine Learning Classification Models
+# Machine Learning Classification Models: Loan Dataset Analysis
 
-Overview
-This project analyzes and evaluates various classification models to predict loan status. The dataset includes features such as:
+## Overview of the Dataset
 
-Transaction type (e.g., self-employed)
-Applicant income
-Co-applicant income
-Loan amount
-Credit history
-Property area
-The target variable is loan status.
+This project analyzes a Loan Dataset to evaluate which classification model is best suited for loan status prediction. The models under consideration are:
 
-Classification Models Evaluated:
-The following models were tested to identify the best fit for the dataset:
+- Logistic Regression
+- K-Nearest Neighbor
+- Support Vector Classification (SVC)
+- Decision Tree
+- Random Forest
 
-Logistic Regression
-K-Nearest Neighbor (KNN)
-Support Vector Classification (SVC)
-Decision Tree
-Random Forest
-Evaluation Metrics:
-To determine the performance of each model, I used the following metrics:
+The dataset includes the following features as independent variables:
+- Transaction type (Self-employed)
+- Applicant income
+- Co-applicant income
+- Loan amount
+- Credit history
+- Property area
 
-Confusion Matrix
-Accuracy
-Precision
-Recall
-F1 Score
-Results:
-1. Logistic Regression
+The target variable is the loan status.
 
-Confusion Matrix: [[14 19], [2 88]]
-Accuracy: 82.9%
-Precision: 82.24%
-Recall: 97.77%
-F1 Score: 89.34%
-Observation: The Logistic Regression model demonstrates high accuracy, precision, recall, and F1 score. It effectively balances classifying both categories.
+### Evaluation Metrics
+I used the following metrics to evaluate model performance:
+- Confusion Matrix
+- Accuracy
+- Precision
+- Recall
+- F1 Score
 
-2. K-Nearest Neighbor (KNN)
+## Model Performance
 
-Accuracy: 80.5%
-Precision, Recall, F1 Score: Comparable to Logistic Regression.
-Observation: KNN performs well with commendable accuracy, precision, recall, and F1 score, indicating good classification balance.
+### Logistic Regression
+- **Confusion Matrix:** `[[14 19], [2 88]]`
+- **Accuracy Score:** `0.829`
+- **Precision Score:** `0.822`
+- **Recall Score:** `0.978`
+- **F1 Score:** `0.893`
 
-3. Support Vector Classification (SVC)
+**Observation:**
+- The Logistic Regression classifier demonstrates a high accuracy score and strong precision, recall, and F1 score. It excels in correctly classifying both classes, making it a well-balanced model.
 
-Confusion Matrix: [[17 16], [8 82]]
-Accuracy: 80.4%
-Precision: 83.67%
-Recall: 91.11%
-F1 Score: 87.23%
-Observation: SVC has similar performance to Logistic Regression, with strong precision, recall, and overall balanced classification.
+### K-Nearest Neighbor Classification
+- **Confusion Matrix:** N/A
+- **Accuracy Score:** `0.805`
+- **Precision Score:** N/A
+- **Recall Score:** N/A
+- **F1 Score:** N/A
 
-4. Decision Tree
+**Observation:**
+- The K-Nearest Neighbors classifier performs well with an accuracy of 0.805, maintaining a good balance between precision and recall.
 
-Observation: The Decision Tree classifier has a lower accuracy and struggles with recall, suggesting it may overfit to the data.
-5. Random Forest
+### Support Vector Classification
+- **Confusion Matrix:** `[[17 16], [8 82]]`
+- **Accuracy Score:** `0.805`
+- **Precision Score:** `0.837`
+- **Recall Score:** `0.911`
+- **F1 Score:** `0.872`
 
-Confusion Matrix: [[20 13], [12 78]]
-Accuracy: 79.6%
-Precision: 85.71%
-Recall: 86.66%
-F1 Score: 86.18%
-Observation: Random Forest shows improved performance over the Decision Tree, with a balanced F1 score and reliable precision and recall.
+**Observation:**
+- Support Vector Classifier (SVC) shows similar performance to Logistic Regression with high accuracy, precision, recall, and F1 score, indicating effective classification.
 
-Summary:
-Logistic Regression, KNN, and SVC are the top-performing models for this dataset, all demonstrating strong accuracy, precision, and recall. While the Decision Tree model underperforms due to potential overfitting, the Random Forest model improves upon this and offers a well-balanced performance.
+### Decision Tree Classification
+- **Confusion Matrix:** N/A
+- **Accuracy Score:** N/A
+- **Precision Score:** N/A
+- **Recall Score:** N/A
+- **F1 Score:** N/A
+
+**Observation:**
+- The Decision Tree classifier has a lower accuracy score than other models. While its precision is reasonable, it struggles with recall, indicating possible overfitting.
+
+### Random Forest Classification
+- **Confusion Matrix:** `[[20 13], [25 65]]`
+- **Accuracy Score:** `0.691`
+- **Precision Score:** `0.833`
+- **Recall Score:** `0.722`
+- **F1 Score:** `0.774`
+
+- **Confusion Matrix (Second Run):** `[[20 13], [12 78]]`
+- **Accuracy Score:** `0.797`
+- **Precision Score:** `0.857`
+- **Recall Score:** `0.867`
+- **F1 Score:** `0.862`
+
+**Observation:**
+- The Random Forest classifier improves over the Decision Tree, offering a balanced performance with higher precision, recall, and F1 scores.
+
+## Summary
+- Logistic Regression, K-Nearest Neighbors, and the Support Vector Classifier are the best-performing models for this dataset, demonstrating high accuracy and strong precision-recall balances.
+- The Decision Tree, while reasonable in precision, struggles with recall, possibly due to overfitting.
+- The Random Forest classifier offers improved performance over the Decision Tree, providing a more balanced classification.
